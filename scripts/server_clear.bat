@@ -1,1 +1,1 @@
-rmdir /S /Q c:\mylinuxTestApp
+ echo "delete deployment or clear folder contents"
