@@ -1,1 +1,1 @@
-rmdir /S /Q C:\inetpub\wwwroot\aspnetcoreapp
+rmdir /S /Q c:\mylinuxTestApp

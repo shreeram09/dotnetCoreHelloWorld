@@ -1,1 +1,1 @@
-echo "server starting...."
+dotnet run

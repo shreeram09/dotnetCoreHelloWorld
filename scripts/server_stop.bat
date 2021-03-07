@@ -1,1 +1,1 @@
-echo "server stoping ...."
+taskkill /F /IM mylinuxTestApp.exe
