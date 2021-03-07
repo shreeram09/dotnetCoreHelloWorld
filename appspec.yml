@@ -1,20 +1,20 @@
 version: 0.0
 os: windows
 files:
-  - source: /build_output
+  - source: \build_output
     destination: c:\mylinuxTestApp
 hooks:
   ApplicationStop:
-    - location: scripts/stop_service
+    - location: scripts\server_stop.bat
       timeout: 300
     #  runas: root
 
   BeforeInstall:
-    - location: scripts/server_clear.bat
+    - location: scripts\server_clear.bat
       timeout: 300
     #  runas: root
 
   ApplicationStart:
-    - location: scripts/server_start.bat
+    - location: scripts\server_start.bat
       timeout: 300
     #  runas: root
