@@ -24,11 +24,10 @@ phases:
       - echo Publish started on `date`
       - dotnet publish -c Release -r win10-x64 -o ./build_output ${PROJECT}.csproj --self-contained false
       - ls -l
-     # - cp Procfile ./build_output
-      - ls -l ./build_output
+      - cp appspec.yml ./build_output
     
 artifacts:
   files:
-    - 'appspec.yml'
+    - '**/*'
   base-directory: ./build_output
   discard-paths: yes
