@@ -5,16 +5,16 @@ files:
     destination: c:\mylinuxTestApp
 hooks:
   ApplicationStop:
-    - location: scripts\server_stop.bat
+    - location: server_stop.bat
       timeout: 300
     #  runas: root
 
   BeforeInstall:
-    - location: scripts\server_clear.bat
+    - location: server_clear.bat
       timeout: 300
     #  runas: root
 
   ApplicationStart:
-    - location: scripts\server_start.bat
+    - location: server_start.bat
       timeout: 300
     #  runas: root
