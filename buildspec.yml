@@ -27,6 +27,7 @@ phases:
       - cp appspec.yml ./build_output
       - mkdir ./build_output/scripts
       - cp scripts/* ./build_output/scripts/
+      - ls build_output
     
 artifacts:
   files:
