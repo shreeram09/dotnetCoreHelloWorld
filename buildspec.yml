@@ -25,7 +25,8 @@ phases:
       - dotnet publish -c Release -r win10-x64 -o ./build_output ${PROJECT}.csproj --self-contained false
       - ls -l
       - cp appspec.yml ./build_output
-      - mkdir ./build_ouput/scripts && cp -r ./scripts ./build_output/scripts
+      - mkdir ./build_output/scripts
+      - cp scripts/* ./build_output/scripts/
     
 artifacts:
   files:
